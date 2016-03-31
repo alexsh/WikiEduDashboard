@@ -22,7 +22,7 @@ module.exports = {
     loaders: [{
       test: /\.jsx?$/,
       exclude: [/vendor/, /node_modules/],
-      loader: 'babel',
+      loader: 'babel-loader',
       query: {
         cacheDirectory: true
       }
