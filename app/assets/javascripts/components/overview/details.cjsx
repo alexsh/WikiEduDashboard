@@ -15,7 +15,6 @@ UserStore         = require '../../stores/user_store.coffee'
 CohortStore       = require '../../stores/cohort_store.coffee'
 
 CourseUtils       = require('../../utils/course_utils.js').default
-SyllabusUpload    = require('./syllabus-upload.jsx').default
 # For some reason getState is not being triggered when CohortStore gets updated
 
 getState = (course_id) ->
@@ -182,7 +181,6 @@ Details = React.createClass(
         </div>
         {tags}
         {course_type_selector}
-        <SyllabusUpload {...@props} />
       </div>
     </div>
 )

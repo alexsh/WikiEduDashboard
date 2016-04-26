@@ -10,6 +10,16 @@
   +above(desktop)
     right 74px
 
+.link-button
+  background none
+  border none
+  padding 0
+  margin 0
+  text-decoration underline
+  color $brand_primary
+  &:focus
+    outline 0
+
 .button, input.button
   background-color mercury
   border 1px solid zircon
@@ -36,7 +46,7 @@
     width 100%
     margin-left 0
     text-align center
-  
+
   &.button--no-margin
     margin-left 0
 
@@ -160,4 +170,3 @@ tr.students .button.plus
 .sidebar__course-actions span
   font-size 15px
   color body-color
-
